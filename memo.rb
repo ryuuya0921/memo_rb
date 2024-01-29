@@ -38,7 +38,7 @@ elsif memo_type == 2
   input_memo = STDIN.read # 全ての入力を一度で読み込む。複数行の入力を一度に処理することができる。
   memo = input_memo.chomp
   
-  CSV.open("#{memo}.csv","a") do |csv| #引数の"a"は、ファイルを追記モードで開くことを示している。
+  CSV.open("#{name}.csv","a") do |csv| #引数の"a"は、ファイルを追記モードで開くことを示している。
   csv.puts ["#{memo}"]
   end
 end
