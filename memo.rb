@@ -15,9 +15,8 @@ if memo_type == 1
   input_memo = STDIN.read
   memo = input_memo.chomp
 
-  CSV.open("#{file_name}.csv", "w") do |csv|
-
-  csv.puts "#{memo}"
+  CSV.open("#{file_name}.csv","w") do |csv|
+  csv.puts ["#{memo}"]
   end
 end
 
