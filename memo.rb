@@ -7,7 +7,7 @@ memo_type = gets.to_i # ユーザーの入力値を取得し、数字へ変換�
 if memo_type == 1
   puts "拡張子を除いたファイルを入力してください"
   file_name = gets.chomp
-  # getsで取得した文字列から改行文字を除去できる
+  # chompはgetsで取得した文字列から改行文字を除去できる
   
   puts "メモした内容を記入してください"
   puts "完了したら Ctrl + Dをおします"
